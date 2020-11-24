@@ -20,24 +20,6 @@ class KonversiBloc extends Bloc<void, void>{
     }
   }
 
-  Future<bool> getIsMurdha() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    bool b = (prefs.getBool('IS_MURDHA') ?? false);
-    return b;
-  }
-
-  Future<bool> getIsUsingE() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    bool b = (prefs.getBool('IS_COPAS') ?? true);
-    return b;
-  }
-
-  Future<bool> getIsSpasi() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    bool b = (prefs.getBool('IS_SPASI') ?? false);
-    return b;
-  }
-
   Future<bool> getIsFirstTime() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     bool b = (prefs.getBool('IS_FIRST_TIME') ?? true);
