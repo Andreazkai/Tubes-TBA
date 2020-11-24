@@ -25,7 +25,6 @@ class _HomePageState extends State<HomePage> {
         title: Text("Hanacaraka"),
       ),
 
-      // ignore: missing_return
       body: BlocListener<KonversiBloc, void>(listener: (context, state) {
 
       }, child: BlocBuilder<KonversiBloc, void>(
@@ -37,7 +36,6 @@ class _HomePageState extends State<HomePage> {
                   PreferredSize(
                     preferredSize: Size(_size.width, 56),
                     child: Material(
-                      // color: Colors.white,
                       elevation: 2.0,
                       child: Container(
                         padding: EdgeInsets.symmetric(horizontal: 16),
@@ -91,7 +89,6 @@ class _HomePageState extends State<HomePage> {
                     child: Container(
                       padding: EdgeInsets.only(
                           top: 0, bottom: 20, left: 20, right: 20),
-                      // decoration: BoxDecoration(color: Colors.white),
                       width: _size.width,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
