@@ -19,7 +19,7 @@ class KonversiBloc extends Bloc<void, void>{
       await prefs.setBool("IS_FIRST_TIME", false);
     }
   }
-
+  
   Future<bool> getIsFirstTime() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     bool b = (prefs.getBool('IS_FIRST_TIME') ?? true);
